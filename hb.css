@@ -1,0 +1,79 @@
+<style>
+ body {
+        margin: +100px;
+      }
+
+      #file-input {
+        display: none;
+      }
+
+      #file-input-label {
+        font-size: 1.3em;
+        padding: 10px 15px;
+        border: 1px solid black;
+        border-radius: 4%;
+        color: #a32626;
+        background:#140c0c;
+      }
+
+ body {
+        margin: +100px;
+      }
+
+      #submit-input {
+        display: none;
+      }
+
+      #submit-input-label {
+        font-size: 1.3em;
+        padding: 10px 15px;
+        border: 1px solid black;
+        border-radius: 4%;
+         color: #a32626;
+        background:#140c0c;
+      }
+
+
+ 
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 110px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 500px;
+    left: 200px;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .girl{
+    left: 55%;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon{
+    margin-left: 7%;
+    color: #000;
+    margin-left: +50px;
+    font-size: 50px;
+    transition: .4s ease;
+    margin-left: 7%;
+    margin-top: 25%;
+}
+
+.icons ion-icon:hover{
+    color: rgb(59,174,209);
+}
+ 
+   </style> 
+
