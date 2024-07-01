@@ -10,7 +10,7 @@ search.addEventListener('input', ()=>{
         //Loop through all panels
         panels.forEach(caption=>{
             // Get the panel heading
-            const captionHeading = caption.querySelector('h2');
+            const captionHeading = caption.querySelector('h3');
             // Convert input value to lowercase letters
             const captionHeadingText = captionHeading.innerHTML.toLowerCase();
             // Convert input value to lowercase letters
