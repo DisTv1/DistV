@@ -1,6 +1,6 @@
 // Get elements from the DOM
 const search = document.querySelector('.search');
-const panels = document.querySelectorAll('.panel');
+const captions = document.querySelectorAll('.caption');
 
 // Add a input event
 // This event fires whenever you type something in the input field
@@ -8,30 +8,30 @@ search.addEventListener('input', ()=>{
     // If the search bar isn't empty
     if(search.value!==""){
         //Loop through all panels
-        panels.forEach(panel=>{
+        panels.forEach(caption=>{
             // Get the panel heading
-            const panelHeading = panel.querySelector('h3');
+            const captionHeading = caption.querySelector('h3');
             // Convert input value to lowercase letters
-            const panelHeadingText = panelHeading.innerHTML.toLowerCase();
+            const captionHeadingText = captionHeading.innerHTML.toLowerCase();
             // Convert input value to lowercase letters
             // This will make the search case Unsensitive
             const inputText = search.value.toLowerCase();
             // If the heading text DOESN'T(!) contain what is in the search bar
-            if(!panelHeadingText.includes(inputText)){
+            if(!captionHeadingText.includes(inputText)){
                 // Hide that panel
-                panelHeading.parentElement.style.display = "none";
+                captionHeading.parentElement.style.display = "none";
             }
             else{
                 // But if it does then make sure to show that panel
-                panelHeading.parentElement.style.display = "block";
+                captionHeading.parentElement.style.display = "block";
             }
         });
     }
     else{
         // If the search bar is empty
         // Show all of the panels
-        panels.forEach(panel=>{
-            panel.style.display="block";
+        captions.forEach(caption=>{
+            caption.style.display="block";
         });
     }
 });
