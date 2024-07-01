@@ -1,3 +1,7 @@
+// Get elements from the DOM
+const search = document.querySelector('.search');
+const panels = document.querySelectorAll('.panel');
+
 // Add a input event
 // This event fires whenever you type something in the input field
 search.addEventListener('input', ()=>{
