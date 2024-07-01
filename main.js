@@ -1,6 +1,6 @@
 // Get elements from the DOM
 const search = document.querySelector('.search');
-const captions = document.querySelectorAll('.caption');
+const caption = document.querySelectorAll('.caption');
 
 // Add a input event
 // This event fires whenever you type something in the input field
@@ -8,9 +8,9 @@ search.addEventListener('input', ()=>{
     // If the search bar isn't empty
     if(search.value!==""){
         //Loop through all panels
-        panels.forEach(caption=>{
+        caption.forEach(caption=>{
             // Get the panel heading
-            const captionHeading = caption.querySelector('h3');
+            const captionHeading = caption.querySelector('h2');
             // Convert input value to lowercase letters
             const captionHeadingText = captionHeading.innerHTML.toLowerCase();
             // Convert input value to lowercase letters
@@ -30,7 +30,7 @@ search.addEventListener('input', ()=>{
     else{
         // If the search bar is empty
         // Show all of the panels
-        captions.forEach(caption=>{
+        caption.forEach(caption=>{
             caption.style.display="block";
         });
     }
